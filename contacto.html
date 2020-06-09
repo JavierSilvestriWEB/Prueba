@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tpM_JS.js"></script>
+
+</head>
+<body>
+
+    <header id="Inicio" style="background-image: none;
+                                box-shadow: none;
+                                height: 80px;">
+        <div class="bodyH">
+            <div class="uni">
+                <img src="Img-Footer-FCFMyN.png" style="width: 300px; height: auto;">
+            </div>
+            <nav>
+                <ul class="ulH">
+                    <li class="liH"><a href="index.html">Inicio</a></li>
+                    <li class="liH"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section style="width: 100%;">
+
+
+        <center>
+
+            <div id="controlDoceAlumn" class="control">
+                
+                <h3 class="subtit">Elija el tipo de formulario a completar :</h3>
+
+                <input class="botonContacto" type="button" value="Docentes" onclick="controlDA('docentes');">
+                <input class="botonContacto" type="button" value="Alumnos" onclick="controlDA('alumnos');">
+
+            </div>
+
+            <form action="mailto:aulero.fmn@gmail.com" name="f1" id="f1" class="formu" style="display: none;">
+
+                <div id="formAlumnos" class="campos" style="display: none;">
+                    
+                    <h2>Complete El Formulario :</h2><br>
+
+                    <input class="camptexto" type="text" name="nombreAlumnos" placeholder="Nombre Completo"maxlength="40"><br><br>
+                    <input class="camptexto" type="email" name="correoAlumnos" placeholder="Tu e-mail"  minlength="8"><br><br>
+
+                    <select name="carrera" id="carrera" class="carrera">
+                        <option value="IngMinas">Ingenieria en Minas</option>
+                        <option value="TecOV">Tecnico Obras Viales</option>
+                        <option value="LicCG">Licienciatura en Ciencias Geologicas</option>
+                        <option value="TecGinfo">Tecnicatura en Geoinformatica</option>
+                    </select><br><br>
+
+                    <textarea name="areatextoA" id="areatexto" placeholder="Escribi Tu Consulta :"></textarea><br><br>
+
+                    <input class="botonContacto" type="button" value="Enviar" onclick="validacion(f1.correoAlumnos.value, f1.nombreAlumnos.value, f1.areatextoA.value, 'f1');">
+
+                </div>
+            </form>
+
+            <form action="mailto:aulero.fmn@gmail.com" name="f2" id="f2" class="formu" style="display: none;">
+                <div id="formDocentes" class="campos" style="display: none;">
+
+                    <h2>Complete El Formulario :</h2><br>
+                    <p>(Si quiere reservar una aula haga click en "RESERVAR AULA")</p>
+                    <input class="botonContacto" type="button" value="Reservar Aula" onclick="controlDA('reservaAula');">
+
+                    <input class="camptexto" type="text" name="nombreDocentes" placeholder="Nombre Completo" maxlength="40"><br><br>
+                    <input class="camptexto" type="email" name="correoDocentes" placeholder="Tu e-mail"  minlength="8"><br><br>
+
+                    <textarea name="areatextoD" id="areatexto" placeholder="Escribi Tu Consulta :"></textarea><br><br>
+
+                    <input class="botonContacto" type="button" value="Enviar" onclick="validacion(f2.correoDocentes.value,  f2.nombreDocentes.value, f2.areatextoD.value, 'f2');">
+
+                </div>
+            </form>
+
+            <form action="mailto:aulero.fmn@gmail.com" name="f3" id="f3" class="formu" style="display: none;">
+                <div id="reservasAula" class="campos" style="display: none;">
+                    <h2>Para Reservar Aula, Complete los Siguientes Campos :</h2><br>
+
+                    <input class="camptexto" type="text" name="nomMateria" placeholder="Nombre de la Materia"><br><br>
+                    
+                    <input class="camptexto" type="email" name="correoReserva" placeholder="Ingresa Tu e-mail"  minlength="8"><br><br>
+
+                    <input class="camptexto" type="number" name="anio" min="1" placeholder="Ingrese Año"><br><br>
+
+                    <input class="camptexto" type="text" name="nomCarrera" placeholder="Nombre de la Carrera"><br><br>
+                    
+                    <input class="camptexto" type="number" name="cantEstudiantes" min="1" placeholder="Cantidad de Alumnos"><br><br>
+                    
+                    Cuatrimestre :
+                    <select name="dia" class="carrera">
+                        <option value="prim">Primer Cuatrimestre</option>
+                        <option value="segu">Segundo Cuatrimestre</option>
+                    </select><br><br>
+
+                    Dia de la Semana :
+                    <select name="cuatrimestre" class="carrera">
+                        <option value="lun">Lunes</option>
+                        <option value="ma">Martes</option>
+                        <option value="mi">Miercoles</option>
+                        <option value="jue">Jueves</option>
+                        <option value="vier">Viernes</option>
+                    </select><br><br>
+                    
+                    <input class="camptexto" type="number" name="hora" placeholder="Ingrese la Hora ( 8hs a 20hs )" min="8" max="20"><br><br>
+
+                    <input class="botonContacto" type="button" value="Enviar" onclick="validacionReserva(f3.nomMateria.value, f3.correoReserva.value,  f3.anio.value, f3.nomCarrera.value, f3.cantEstudiantes.value, f3.hora.value);">
+                    
+                </div>
+            </form>
+
+        </center>
+
+
+    </section>
+
+    <footer>
+        <div class="contfo">
+            <div class="facu">
+                <h3 class="foo">FACULTAD</h3> <br>
+                <li><a href="http://fmn.unsl.edu.ar/">Facultad</a></li> <br>
+                <li><a href="http://www.unsl.edu.ar/">UNSL</a></li> <br>
+            </div>
+            <div class="contac">
+                <h3 class="foo">CONTACTO</h3><br><br>
+                <a href="contacto.html">aulero.fmn@gmail.com</a>
+            </div>
+            <div class="imgF">
+                <img src="Img-Footer-FCFMyN.png" style="width: 300px; height: auto;"><br><br>
+                <img src="Img-Footer-UNSL.svg" style="width: 300px; height: auto;">
+            </div>
+        </div>
+        <div class="derechos">
+            <h4>© Todos los derechos reservados - FCFMyN - Diseñado por Pulso Marketing & Software</h4>
+        </div>
+    </footer>
+    
+</body>
+</html>

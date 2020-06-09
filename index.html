@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSL</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tpM_JS.js"></script>
+
+</head>
+<body>
+
+    <header id="Inicio">
+        <div class="bodyH">
+            <div class="uni">
+                <img src="Img-Footer-FCFMyN.png" style="width: 300px; height: auto;">
+            </div>
+            <nav>
+                <ul class="ulH">
+                    <li class="liH"><a href="#Inicio">Inicio</a></li>
+                    <li class="liH"><a href="#Aulas">Aulas</a></li>
+                    <li class="liH"><a href="#Horarios">Horarios</a></li>
+                    <li class="liH"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="body2">
+        <section>
+            <div class="bloques">
+                <div class="tit">
+                    <h2>Noticias</h2>
+                </div>
+                <div class="contN">
+                    <div class="N1">
+                        <h3 class="subtit">La Unión Matemática Argentina repudia los dichos contra Adrián Paenza</h3>
+                        <div class="tamimg">
+                            <img src="Neme.jpg" style="width: 500px; height: auto;">
+                        </div>
+                        <p>La comisión directiva está conformada por docentes e investigadores del Departamento de Matemáticas de la Facultad de Ciencias Físico Matemáticas y Naturales (FCFMyN), quienes expusieron lo siguiente: <br>
+
+                        “Con respecto a las opiniones publicadas por distintos miembros de la comunidad científica argentina (ver: diario La Nación, sección Sociedad, del 2 de junio), que intentan desacreditar la opinión o posicionamiento político del Dr. Adrián Paenza, la Unión Matemática Argentina (UMA), a través de su Comisión Directiva, manifiesta su apoyo al Dr. Paenza y desea expresar a la comunidad en general, que el Dr. Adrián Paenza es un gran divulgador de la ciencia, de gran prestigio internacional, ganador del premio Leelavati 2014 otorgado por la Unión Matemática Internacional como mejor divulgador de matemática del mundo”.</p>
+                    </div>
+                    <div class="N1">
+                        <h3 class="subtit"> Día del Matemático: Entrevista al Dr. Adrián Pastine</h3>
+                        <div class="tamimg">
+                            <img class="zv" src="zv.jpg" style="width: 500px; height: auto;">
+                        </div>
+                        <p>En el Día del Matemático decidimos realizar una entrevista a un profesor del Departamento de Matemáticas de la Facultad de   Ciencias Físico Matemáticas y Naturales (FCFMyN) e investigador del Instituto de Matemática Aplicada San Luis (IMASL). <br>
+
+                            En tiempos de pandemia, el Dr. Adrián Pastine se adaptó a la modalidad de enseñanza virtual. Él se desempeña como docente en las carreras Licenciatura en Ciencias Matemáticas, Licenciatura en Matemática Aplicada y Profesorado en Matemática y
+                            
+                            Además, es Profesor Responsable de Álgebra I, que incluye todas las Ingenierías, Licenciaturas y Profesorados de la FCFMyN y de Ingeniería en Alimentos de la FQByF. <br>
+                            
+                            Como director de Trabajos Finales de Grado y Tesis de Posgrado realiza reuniones semanales por plataformas digitales con sus estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloques" id="Aulas">
+                <div class="tit">
+                    <h2>Aulas</h2>
+                </div>
+                <div class="contA">
+                    <h3 class="subtit">Espacios De La UNSL</h3>
+                    <br>
+                    <div class="botones" id="botones">
+                        <input class="botonAulas" type="button" value="ANFITEATROS" onclick="mostrar('anfi');"><br>
+                        <input class="botonAulas" type="button" value="BLOQUE I" onclick="mostrar('b1');"><br>
+                        <input class="botonAulas" type="button" value="BLOQUE II" onclick="mostrar('b2');"><br>
+                        <input class="botonAulas" type="button" value="BLOQUE IV" onclick="mostrar('b4');"><br>
+                        <input class="botonAulas" type="button" value="COMEDOR UNIVERSITARIO" onclick="mostrar('cu');"><br>
+                        <input class="botonAulas" type="button" value="CHACABUCO Y PEDERNERA" onclick="mostrar('cyp');"><br>
+                    </div>
+                    <div class="anfiteatros" id="anfiteatro">
+                        <h3 class="subtit">ANFITEATRO</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>CODIGO</th><th>AULA</th><th>CAPACIDAD</th><th>UBICACION</th><th>ACTIVADA</th><th>HORARIO</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>91</td><td>Anfiteatro 1</td><td>200</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>92</td><td>Anfiteatro 2</td><td>200</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>93</td><td>Anfiteatro 3</td><td>200</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                        </table>
+                        <input class="volver" type="button" value="Volver" onclick="volver();">
+                    </div>
+
+                    <div class="bloqueI" id="bloqueI">
+                        <h3 class="subtit">BLOQUE I</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>CODIGO</th><th>AULA</th><th>CAPACIDAD</th><th>UBICACION</th><th>ACTIVADA</th><th>HORARIO</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>61</td><td>36</td><td>60</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>62</td><td>37</td><td>45</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>63</td><td>38</td><td>60</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>64</td><td>39</td><td>45</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>65</td><td>40</td><td>60</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>66</td><td>41</td><td>45</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>67</td><td>42</td><td>60</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>68</td><td>43</td><td>45</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                        </table>
+                        <input class="volver" type="button" value="Volver" onclick="volver();">
+                    </div>
+
+                    <div class="bloqueII" id="bloqueII">
+                        <h3 class="subtit">BLOQUE II</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>CODIGO</th><th>AULA</th><th>CAPACIDAD</th><th>UBICACION</th><th>ACTIVADA</th><th>HORARIO</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>70</td><td>51</td><td>30</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>71</td><td>52</td><td>50</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>72</td><td>53</td><td>30</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>73</td><td>54</td><td>50</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>76</td><td>57</td><td>80</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                            <tr>
+                                <td>129</td><td>58</td><td>100</td><td>Planta Baja</td><td>Habilitada</td><td><a class="aAulas" href="#">Ver</a></td>
+                            </tr>
+                        </table>
+                        <input class="volver" type="button" value="Volver" onclick="volver();">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloques" id="Horarios">
+                <div class="tit">
+                    <h2>Horarios</h2>
+                </div>
+                <div class="contH">
+                    <ul class="menu">
+                        <li><a class="menuHorarios">Horarios</a>
+                            <ul class="submenu">
+                                <li class="minas"><a class="menuHorarios">Ingenieria En Minas</a>
+                                    <ul class="submenuMinasA">
+                                        <li class="priA"><a class="menuHorarios">Primer Año</a>
+                                            <ul class="menuPrimero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios" onclick="horarioMateria('calcI');">Calculo I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios" onclick="horarioMateria('algeI');">Algebra I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios" onclick="horarioMateria('introM');">Introduccion a la Mineria</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios" onclick="horarioMateria('fundI');">Fundamentos de la Informatica</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Algebra II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Quimica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fisica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tecnica de la Expersion Oral y Escrita</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="segA"><a class="menuHorarios">Segundo Año</a>
+                                            <ul class="menuSegundo">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Fisica II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Calculo II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fundamentos de la Representacion</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Sistemas de Presentacion</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Estatica y Resistencia de Materiales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Electrotecnia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Quimica Analitica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Mecanica Aplicada</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fundamentos de la Geologia para Ingenieria</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="terA"><a class="menuHorarios">Tercer Año</a>
+                                            <ul class="menuTercero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Mineralogia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Mecanicas de Rocas</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Economia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Mecanica Aplicada II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Construcciones</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Laboreo I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tecnologia de Explosivos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Modelos Matematicos Aplicados a la Mineria</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fundamentos de Geoestadisticas</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tratamiento de Minerales</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="cuaA"><a class="menuHorarios">Cuarto Año</a>
+                                            <ul class="menuCuarto">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+
+                                                <li><a class="menuHorarios" href="#Horarios">Simulacion de Procesos Mineros</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Laboreo II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Petrologia y Geologia de Yacimientos Minerales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tratamiento de Minerales</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Exploracion y Evalucion de Yacimientos Minerales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Evalucion Economica e Ingenieria de Proyectos Mineros</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Topografia</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="quiA"><a class="menuHorarios">Quinto Año</a>
+                                            <ul class="menuQuinto">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+
+                                                <li><a class="menuHorarios" href="#Horarios">Trabajo Final</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Practicas Pre-Profesionales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Plantas de Tratamiento de Minerales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Legistalcion Minera y del Trabajo</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Medio Ambiente en Mineria</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Seguridad e Higiene</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Direccion y Gestion de Empresas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="obrasViales"><a class="menuHorarios">Tecnico En Obras Viales</a>
+                                    <ul class="submenuObrasVialesA">
+                                        <li class="priA"><a class="menuHorarios">Primer Año</a>
+                                            <ul class="menuPrimero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Fisica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Matematica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Sistemas de Presentacion</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Estudios de Sueldos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Diseño Geometrico de Caminos I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Construcciones</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="segA"><a class="menuHorarios">Segundo Año</a>
+                                            <ul class="menuSegundo">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Informatica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tecnologia de Hormigon</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Tecnologia de Asfalto</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Diseño Geometrico de Caminos II</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Puntes y Estructuras Viales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Proyecto de Caminos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Organizacion y Economia de Obras Viales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Equipos</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="terA"><a class="menuHorarios">Tercer Año</a>
+                                            <ul class="menuTercero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Movimientos de Rocas</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Legistlacion y Seguridad Vial</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Seguridad, Higiene y Medio Ambiente</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Practica de Laboratorio</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Evaluacion de Pavimentos</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Proyecto Integrador</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Practica de Tecnica Supervisada</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Responsabilidad Social Empresaria</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Ambiente Laboral</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Diseño Vial Asistido por Computadora</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="cienGeologicas"><a class="menuHorarios">Licenciatura En Ciencias Geologicas</a>
+                                    <ul class="submenuCienciasGeologicasA">
+                                        <li class="priA"><a class="menuHorarios">Primer Año</a>
+                                            <ul class="menuPrimero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Introduccion a la Geologia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Matematica I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Computacion</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Ingles</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Quimica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fisica I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Matematica II</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="segA"><a class="menuHorarios">Segundo Año</a>
+                                            <ul class="menuSegundo">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Geomorfologia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geoquimica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fisica II</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Mineralogia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Estructural</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geofisica</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="terA"><a class="menuHorarios">Tercer Año</a>
+                                            <ul class="menuTercero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Sedimentologia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Paleontologia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Petrologia Ignea y Metaforica</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia de Yacimientos Minerales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Suelos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Estatigrafiay Geologia Historica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geoinformatica</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="cuaA"><a class="menuHorarios">Cuarto Año</a>
+                                            <ul class="menuCuarto">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+
+                                                <li><a class="menuHorarios" href="#Horarios">Hidrogeologia</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Argentina</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Recursos Mineros</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Recursos Energeticos</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Levantamiento Geologico</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geotecnia</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="quiA"><a class="menuHorarios">Quinto Año</a>
+                                            <ul class="menuQuinto">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Ambiental y Riesgo Geologico</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Legal</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Metodos de Prospeccion</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Economica de Proyectos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Practica Profesional</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Trabajo Final</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="geoinformatica"><a class="menuHorarios">Tecnicatura En Geoinformatica</a>
+                                    <ul class="submenuGeoinformaticaA">
+                                        <li class="priA"><a class="menuHorarios">Primer Año</a>
+                                            <ul class="menuPrimero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Matematica Aplicada</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Introduccion a la Geoinformatica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Elementos de Geologia</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Tratamientos de Datos Empiricos para Ciencias Experimentales</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Fundamentos de la Informatica</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Teledeteccion  </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="segA"><a class="menuHorarios">Segundo Año</a>
+                                            <ul class="menuSegundo">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Programacion I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Sistema de Informacion Geografica I</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geomorfologia Aplicada</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Base de Datos</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Carteo Topografico-Geologico</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Sistema de Informacion Geografica II</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="terA"><a class="menuHorarios">Tercer Año</a>
+                                            <ul class="menuTercero">
+                                                <p style="color: #fff; text-decoration: underline;">PRIMER CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Ingles</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Geologia Ambiental y Riesgo Geologico</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Teledeteccion II</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Cartografia Digital y Servidores de Mapa</a></li>
+
+                                                <p style="color: #fff; text-decoration: underline;">SEGUNDO CUATRIMESTRE</p>
+                                                
+                                                <li><a class="menuHorarios" href="#Horarios">Practica Tecnica Supervisada</a></li>
+                                                <li><a class="menuHorarios" href="#Horarios">Exploracion de Recursos Naturales</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div id="calculoI" style="display: none;">
+                        <h3 class="subtit">Carrera: Ingenieria en Minas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Materia</th><th>Hora/Lugar</th><th>Primera Clase</th><th>Departamento</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Calculo I</td>
+                                <td>Teoria: Viernes de 18hs a 20hs, AULA 58, BLOQUE 2 <br>
+                                    Practica: Martes y Jueves de 18hs a 21hs, AULA 58, BLOQUE 2</td>
+                                <td>Martes 10/03</td>
+                                <td><a class="aAulas" href="http://www0.unsl.edu.ar/~calculo1/">Ver</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="algebraI" style="display: none;">
+                        <h3 class="subtit">Carrera: Ingenieria en Minas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Materia</th><th>Hora/Lugar</th><th>Primera Clase</th><th>Departamento</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Algebra I</td>
+                                <td>LUNES DE 18.30 A 20.30 AULA 58 <br>
+                                    MIERCOLES DE 18 A 20, COMEDOR CHICO, COMEDOR UNSL <br>
+                                    VIERNES DE 15 A 18, AULA 17, COMEDOR UNSL</td>
+                                <td>LUNES 09/03</td>
+                                <td><a class="aAulas" href="http://algebra12020unsl.blogspot.com/">Ver</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="introMineria" style="display: none;">
+                        <h3 class="subtit">Carrera: Ingenieria en Minas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Materia</th><th>Hora/Lugar</th><th>Primera Clase</th><th>Departamento</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Introduccion a la Mineria</td>
+                                <td>MIERCOLES DE 16 A 18 HS AULA MINERIA GRANDE SUBSUELO, CHACABUCO Y PEDERNERA</td>
+                                <td>MIERCOLES 11/03</td>
+                                <td><a class="aAulas" href="http://www0.unsl.edu.ar/~mineria/">Ver</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="fundInformatica" style="display: none;">
+                        <h3 class="subtit">Carrera: Ingenieria en Minas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Materia</th><th>Hora/Lugar</th><th>Departamento</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Fundamentos de la Informatica</td>
+                                <td>LUNES DE 14 A 16 hs, SALA ALEJANDRA RAMMIREZ, RECTORADO <br>
+                                    MIERCOLES DE 14 A 16 hs, SALA ALEJANDRA RAMMIREZ, RECTORADO</td>
+                                <td><a class="aAulas" href="http://dirinfo.unsl.edu.ar/servicios/?module=home&action=detalle_materias&id=3">Ver</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <aside>
+
+            <div class="bloqueAside">
+
+                <div class="contAs">
+                    <h2>Enlaces</h2>
+                    <p>- - - - - - - - - - - - - - - - </p>
+                    <ul>
+                        <li><a class="aAS" href="http://fmn.unsl.edu.ar/">Facultad</a></li>
+                        <li><a class="aAS" href="http://www.unsl.edu.ar/">UNSL</a></li>
+                        <li><a class="aAS" href="#">Planes De Estudio</a></li>
+                    </ul>
+                    <p>- - - - - - - - - - - - - - - - </p>
+                </div>
+
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="contfo">
+            <div class="facu">
+                <h3 class="foo">FACULTAD</h3> <br>
+                <li><a href="http://fmn.unsl.edu.ar/">Facultad</a></li> <br>
+                <li><a href="http://www.unsl.edu.ar/">UNSL</a></li> <br>
+            </div>
+            <div class="contac">
+                <h3 class="foo">CONTACTO</h3><br><br>
+                <a href="contacto.html">aulero.fmn@gmail.com</a>
+            </div>
+            <div class="imgF">
+                <img src="Img-Footer-FCFMyN.png" style="width: 300px; height: auto;"><br><br>
+                <img src="Img-Footer-UNSL.svg" style="width: 300px; height: auto;">
+            </div>
+        </div>
+        <div class="derechos">
+            <h4>© Todos los derechos reservados - FCFMyN - Diseñado por Pulso Marketing & Software</h4>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
